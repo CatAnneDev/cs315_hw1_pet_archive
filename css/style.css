@@ -1,0 +1,106 @@
+
+body {
+	font-family: Verdana;
+	background-color: #2C2F33; 
+}
+
+p, h1, aside, figcaption, li {
+	color: #FFFFFF;
+}
+
+/* problem 2 hovered & visited links change color */
+a:visited {
+  color: teal;
+}
+
+a:hover {
+  background-color: black;
+}
+
+
+/* problem 3 alternating background colors on navbar links */
+li#odd {
+	background-color: #DC143C;
+}
+li#even {
+	background-color: #7289DA;
+}
+
+
+/* Problem 4 The first letter of a paragraph is big and a different color. The first line of the paragraph is italic. */
+p#problem4::first-letter {
+	font-size: 200%;
+  	color: #DC143C; /* red-pink */
+}
+p#problem4::first-line {
+	font-style: italic;
+}
+
+
+/* problem 5 Add a couple of links to pdf files, and document files (with .docx extension). 
+By using attribute selectors, add respective icons to the <a> element whose href attribute ends
+ with the text ".pdf" and "*.docx". (you can use any image type, including png). */
+a[href$=".pdf"] { 
+  background: url('../images/pdf.png') 0 50% no-repeat; 
+  padding-left: 25px;
+}
+a[href$=".docx"] { 
+  background: url('../images/docx.png') 0 50% no-repeat; 
+  padding-left: 25px;
+}
+
+
+
+/* problem 6 child & adjacent selector */
+figure > img {
+	border: 5px solid purple;
+}
+div#problem6 + p {
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+
+/* Problem 7 */
+div#problem7 {
+	overflow: scroll;
+	background: teal;
+	margin: 100px;
+	padding: 50px;
+	border-radius: 20px;
+	border: 5px solid #73AD21;
+}
+p#a {
+	border: 10px solid transparent;
+	padding: 15px;
+	border-image: url('../images/border.png') 30 round;
+}
+p#b {
+	border: 10px solid transparent;
+	padding: 15px;
+	background-image: url('../images/border.png');
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; 
+}
+
+.navbar li {
+  float: left;
+  vertical-align: center;
+  list-style-type: none;
+  display: inline;
+}
+
+.navbar li a {
+  display: block;
+  text-align: center;
+  padding: 0px 10px 0px 10px;
+  font-size: 17px;
+}
+
+
+
